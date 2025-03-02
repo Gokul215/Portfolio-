@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">MyPortfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate software developer with experience in HTML, SCSS, React.js, Node.js, and MongoDB.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS/SCSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React.js</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">MongoDB</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: your.email@example.com</p>
+            <p>GitHub: <a href="https://github.com/yourprofile" target="_blank">github.com/yourprofile</a></p>
+        </div>
+    </section>
+
+</body>
+</html>
