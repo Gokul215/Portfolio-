@@ -1,0 +1,108 @@
+// Variables
+$primary-color: #333;
+$secondary-color: #f4f4f4;
+$accent-color: #007bff;
+$font-stack: 'Arial', sans-serif;
+
+// Reset and global styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+// Navbar styles
+.navbar {
+    background: $primary-color;
+    padding: 15px 0;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        
+        li {
+            margin-left: 20px;
+            
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                cursor: pointer;
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+
+// Sections (Initially Hidden Except First One)
+.section {
+    display: none;
+    padding: 60px 20px;
+    text-align: center;
+    
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+// Show Active Section
+.active {
+    display: block;
+}
+
+// Skills section
+.skills {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+        padding-top: 20px;
+        
+        .skill {
+            background: $accent-color;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    }
+}
+
+// Contact section
+.contact {
+    background: $primary-color;
+    color: white;
+    
+    a {
+        color: $accent-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
